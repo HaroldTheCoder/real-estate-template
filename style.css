@@ -329,6 +329,7 @@ img {
     #collapsibleNavbar  ul, #section-4 ul {padding: 2em 0 !important;}
     #myCarousel { padding: 1em 0 !important; }
     #hero { padding: 0 1rem 0 1rem !important; }
+    #main-navbar.active-scroll { padding: 0.3em 0.7em !important; }
     .hero-title, .section-paragraph{
         padding-top: 0 !important;
         padding-right: 0 !important;
@@ -365,12 +366,7 @@ img {
     .card-title { align-items: flex-start !important;}
  
 
-    /* Sections Mobile Adjust */
-    #main-navbar.active-scroll {
-        padding: 0.3em 0.7em !important;
-        background-color: #ffffffe9;
-    }
-    
+    /* Sections Mobile Adjust */  
     #collapsibleNavbar  ul { gap: 1em !important; }
 
     .active-link { border-bottom: none; }
