@@ -78,14 +78,14 @@ ul {
 }
 
 #main-navbar.open {
-    background-color: #ffffffd4;
+    background-color: #ffffffec;
     backdrop-filter: blur(5px);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
 #main-navbar.active-scroll {
     padding: 0.3em 0 !important;
-    background-color: #ffffffd4;
+    background-color: #ffffffec;
     backdrop-filter: blur(5px);
     transition: padding ease 0.4s, background-color ease 0.4s;
 }
