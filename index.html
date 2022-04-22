@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Lab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/company-logo.png" sizes="16x16" type="image/png" >
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/69a0798591.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Top mini-bar optional-->
+    
+<!--<div class="container-fluid top-header bg-dark text-light fs-6">
+        <div class="container d-flex justify-content-between">
+            <div class="d-flex justify-content-evenly align-items-center gap-5 pt-2">
+                <p><i class="fa-solid fa-phone"></i> (222) 555-3333</p>
+                <p><i class="fa-solid fa-envelope"></i></span> wonderhomes@emailex.com</p>
+            </div>
+            <div class="social-media-icons-container d-flex justify-content-evenly align-items-center gap-3 text-light">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>       
+    </div>
+-->
+
+    <!--Top Header-->
+    <header id="main-header" class="container-fluid">
+        <div class="bg-image py-5" style="background: url(images/White\ and\ Purple\ Simple\ Light\ Real\ Estate\ Service\ Website.png) no-repeat; background-size: cover; background-position: center right;">
+            
+            <!--Navbar starts here-->
+            <nav id="main-navbar" class="navbar navbar-expand-lg w-100 p-3 ">
+                <div class="container">
+        
+                    <a href="" class="navbar-brand text-dark fw-bold fs-3 d-flex align-items-center">
+                       <img src="images/company-logo.png" alt="" width="30px"> Wonder<span class="text-primary">Homes</span></a>
+
+                    <!--Navbar toggle icon mobile-->
+				    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+					    <span><i class="fas fa-bars"></i></span>
+				    </button>
+
+                    <div id="collapsibleNavbar" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item px-4"><a href="" class="nav-link text-dark fw-bold active-link px-0 pb-0">Home</a></li>
+                            <li class="nav-item px-4"><a href="" class="nav-link text-dark fw-bold px-0 pb-0">Listing</a></li>
+                            <li class="nav-item px-4"><a href="" class="nav-link text-dark fw-bold px-0 pb-0">Rentals</a></li>
+                            <li class="nav-item px-4"><a href="" class="nav-link text-dark fw-bold px-0 pb-0">About</a></li>
+                            <li class="nav-item px-4"><a href="" class="nav-link text-dark fw-bold px-0 pb-0">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!--Hero section-->
+            <section id="hero-section" class="main_header container">
+                <div class="hero-title container d-flex flex-column justify-content-center pt-5 text-dark">
+                    <h1 class="w-50">Unique housing solutions for you</h1>
+                    <p class="lead w-50">Whether you’re buying, listing, or renting, we can be of assistance to you.</p>
+                    <button class="btn btn-primary my-3 section-btn">View listing</button>
+                </div>
+            </section>
+        </header>
+
+        <!-- Page Contentainer -->
+        <main id="main-content container">
+            <!-- Search Form Bar -->
+            <section class="form-section container my-5 shadow">
+                <form action="get" class="search-form p-4">
+                    <fieldset class="container">
+                        <legend class="fw-bold text-light">Search more than 3,586 properties in the area</legend>
+                        
+                        <div class="d-flex gap-1">
+                            <label for="area-search-input" class="form-label"></label>
+                            <input type="text" id="area-search-input" class="form-control" placeholder="Enter Address, City, or Zip">
+                            <button class="btn btn-dark section-btn">Search <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></button>
+                        </div>
+                        <div class="search-form-input-container d-flex justify-content-between gap-1 py-3">
+                            <label for="min-price-input" class="form-label"></label>
+                            <select name="" id="min-price-input" class="form-select" placeholder="Min Price">
+                                <option value="Min-Price" selected invalid>Min-Price</option>
+                                <option value="$60,000">$60,000</option>
+                                <option value="$80,000">$80,000</option>
+                                <option value="$100,000">$100,000</option>
+                                <option value="$120,000">$120,000</option>
+                                <option value="$150,000">$150,000</option>
+                                <option value="$200,000">$200,000</option>
+                                <option value="$300,000">$300,000</option>
+                                <option value="$400,000">$400,000</option>
+                                <option value="$500,000">$500,000</option>
+                            </select>
+
+                            <label for="max-price-input" class="form-label"></label>
+                            <select name="" id="max-price-input" class="form-select" placeholder="Min Price">
+                                <option value="Max-Price" selected invalid>Max-Price</option>
+                                <option value="$60,000">$60,000</option>
+                                <option value="$80,000">$80,000</option>
+                                <option value="$100,000">$100,000</option>
+                                <option value="$120,000">$120,000</option>
+                                <option value="$150,000">$150,000</option>
+                                <option value="$200,000">$200,000</option>
+                                <option value="$300,000">$300,000</option>
+                                <option value="$400,000">$400,000</option>
+                                <option value="$500,000">$500,000</option>
+                            </select>
+
+                            <label for="beds-input" class="form-label"></label>
+                            <select name="" id="beds-input" class="form-select" placeholder="Min Price">
+                                <option value="Beds" selected invalid>Beds</option>
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+
+                            <label for="baths-input" class="form-label"></label>
+                            <select name="" id="baths-input" class="form-select" placeholder="Min Price">
+                                <option value="Baths" selected invalid>Baths</option>
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+
+                            <label for="property-type-input" class="form-label"></label>
+                            <select name="" id="property-type-input" class="form-select" placeholder="Min Price">
+                                <option value="Property type" selected invalid>Property Type</option>
+                                <option value="Luxury">Luxury</option>
+                                <option value="Classic">Classic</option>
+                                <option value="Modern">Modern</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+
+        <!--Main Content-->
+
+            <!-- Section 1 - Introduction -->
+            <section id="section-1" class="container py-5 my-5">
+                <div class="row d-flex align-items-center gap-2 pt-5">
+                    <div class="col-lg pt-3">
+                        <header>
+                            <h2>Find the home you love</h2>
+                        </header>
+                         <p class="section-paragraph pt-2 pe-5">
+                            We are full-service realty company, assisting homeowners from selection to financing, all the way to the purchase of their homes. All properties feature world-class standards and affordable property rates designed to fit every lifestyle.
+                        </p>
+                    </div>
+                    <div class="col-lg d-flex justify-content-center align-content-center gap-3 section-1-right-col">
+                        <div class="section-background bg-light"></div>
+                        <img src="images/zac-gudakov-95UK5aVgx54-unsplash-min.jpg" alt="" class="img-fluid shadow">
+                        <img src="images/digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash-min.jpg" alt="" class="img-fluid shadow">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 - Property style selection block-->
+            <section id="section-2" class="container py-5 my-5">
+
+                <div class="card-container d-flex justify-content-evenly align-items-center gap-1 py-5">
+
+                    <div class="card-tile card-title d-flex justify-content-start align-items-center">
+                        <header class="ps-3">
+                            <h2 class="">Choose your style</h2>
+                        </header>
+                    </div>
+                    <div class="card-tile card-tile-1 bg-image d-flex justify-content-center align-items-end shadow-lg" style="background:linear-gradient(to top, rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.103)), url(images/mikail-mcverry-GSL3IuuwJv8-unsplash-min.jpg) no-repeat; background-size: cover; background-position: center;">
+                        <p class="lead text-light w-100 text-center py-3 ">Luxury</p>
+                    </div>
+                    <div class="card-tile card-tile-2 bg-image d-flex justify-content-center align-items-end shadow-lg" style="background:linear-gradient(to top, rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.103)), url(images/pexels-pixabay-259588-min.jpg) no-repeat; background-size: cover; background-position: bottom center;">
+                        <p class="lead text-light w-100 text-center py-3">Classic</p>
+                    </div>
+                    <div class="card-tile  card-tile-3 bg-image d-flex justify-content-center align-items-end shadow-lg" style="background:linear-gradient(to top, rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.103)), url(images/r-architecture-MAnVoJlQUvg-unsplash.jpg) no-repeat; background-size: cover; background-position: center;">
+                        <p class="lead text-light w-100 text-center py-3">Modern</p>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section-3" class="container-fluid text-center py-5 my-5">
+                <header class="container">
+                    <h2>Why WonderHomes</h2>
+                    <p class="section-paragraph pt-2 w-75 mx-auto">We always have our clients' best interests as a top priority. Through the actual experience, our client loyalty rewards program, and our client-focused non-profit, we truly want to be your Realtor and trusted resource for life.</p>
+                </header>
+                        
+                <div class="row container mx-auto pt-5">
+                    <div class="col-lg">
+                        <header>
+                            <img src="images/1.png" alt="" class="d-flex mx-auto pb-3 icon-img" width="50px">
+                            <h6>Easy and Safe</h6>
+                        </header>
+                    </div>
+                    <div class="col-lg-4">
+                        <header>
+                            <img src="images/3.png" alt="" class="d-flex mx-auto pb-3 icon-img" width="50px">
+                            <h6>Investment property</h6>
+                        </header>
+                    </div>
+                    <div class="col-lg">
+                        <header>
+                            <img src="images/Untitled design (2).png" alt="" class="d-flex mx-auto pb-3 icon-img" width="76px">
+                            <h6>Trusted Partnership</h6>
+                        </header>
+                    </div>
+                    <div class="col-lg-4">
+                        <header>
+                            <img src="images/2.png" alt="" class="d-flex mx-auto pb-3 icon-img" width="50px">
+                            <h6>Licenses and Contracts</h6>
+                        </header>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <section id="section-4" class="container py-5 mt-5 mb-5">
+                <div class="row d-flex justify-content-between align-items-center gap-5">
+                    <div class="col-lg section3-left-col">
+                        <img src="images/joel-filipe-RFDP7_80v5A-unsplash.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="col-lg ps-5">
+                        <header>
+                            <h2>What we offer</h2>
+                        </header>
+                        <ul class="list-group py-5">
+                            <li class="list-group-item d-flex align-items-center gap-3">
+                                <p class="list-number ps-2">1</p>
+                                <div class="ps-3">
+                                    <h4>Residential Listings</h4>
+                                    <p class="lead">Over 150,000 available homes for every budget.</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center gap-3">
+                                <p class="list-number ps-2">2</p>
+                                <div>
+                                    <h4>Sales and Lising</h4>
+                                    <p class="lead">One-on-one assistance from search to purchase.</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center gap-3">
+                                <p class="list-number ps-2">3</p>
+                                <div>
+                                    <h4>Property Management</h4>
+                                    <p class="lead">Consultancy for clients with multiple properties.</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="img-header-container">
+                            <p>Finding a property that's outside the front door is just as important as what's behind it</p>
+                            <button class="btn btn-primary section-btn">Book a consultation</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5 - About company block -->
+            <section id="section-5" class="container py-5 my-5">
+                <div class="row d-flex align-content-center gap-2 py-5">
+                    <div class="col-lg pt-3">
+                        <header>
+                            <h2>About us</h2>
+                        </header>
+                         <p class="section-paragraph pt-2 pe-5">
+                            At HomeWonders we understand the importance of finding the right home. Established in 1980 our goal is to assit homeowners from selection to financing, all the way to the purchase of their homes. All properties feature world-class standards and affordable property rates designed to fit every lifestyle.
+                        </p>
+
+                        <button type="button" class="btn btn-primary my-3 section-btn">Learn more</button>
+
+                    </div>
+                    <div class="col-lg d-flex justify-content-center align-content-center gap-3 section-1-right-col">
+                        <div class="section-background bg-light"></div>
+                        <img src="images/pexels-fauxels-3184299.jpg" alt="" class="img-fluid shadow about-img">
+                        <img src="images/pexels-alena-darmel-7641863-min.jpg" alt="" class="img-fluid shadow about-img">
+                        
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section 6 - Testimonials slider block -->
+            <section id="section-6" class="container-fluid p-5 mb-5" style="background:linear-gradient(#5f60b8c4, #5f60b8c4), url(images/grant-lemons-jTCLppdwSEc-unsplash.jpg) no-repeat; background-size: cover; background-position: center right;">
+                <header class="container">
+                    <h2 class="text-light text-center">Clients Stories</h2>
+                </header>
+
+                <!-- Carousel -->
+                <div id="myCarousel" class="carousel slide container py-5 " data-bs-ride="carousel">
+                    
+                    <!-- Slides Indicators -->
+                    <div class="carousel-indicators">
+						<button type="button" class="active" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+						<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+
+                    <!-- Slides Container -->
+                    <div class="carousel-inner py-2">
+
+                        <!--First Slide Set-->
+                        <div class="carousel-item active ">
+                            <div class="card-slide-container d-flex justify-content-between align-items-center">
+                                <div class="card-slide bg-light p-4 shadow">
+                                    <header class="card-custom-header d-flex w-100 align-items-center py-2">
+                                        <figure class="card-img-container shadow">
+                                            <img src="images/ben-parker-OhKElOkQ3RE-unsplash.jpg" class="d-block img-thumbnail card-img" alt="">
+                                        </figure>
+                                        <h6 class="ps-2">Ben Park</h6>
+                                    </header>
+
+                                    <div class="card-custom-content py-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ser incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p class="rating py-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-slide bg-light p-4 shadow">
+                                    <header class="card-custom-header d-flex w-100 align-items-center py-2">
+                                        <figure class="card-img-container shadow">
+                                            <img src="images/vince-fleming-j3lf-Jn6deo-unsplash.jpg" class="d-block img-thumbnail card-img" alt="">
+                                        </figure>
+                                        <h6 class="ps-2">Brian Lim</h6>
+                                    </header>
+
+                                    <div class="card-custom-content py-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ser incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p class="rating py-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-slide bg-light p-4 shadow">
+                                    <header class="card-custom-header d-flex w-100 align-items-center py-2">
+                                        <figure class="card-img-container shadow">
+                                            <img src="images/michael-dam-mEZ3PoFGs_k-unsplash (1).jpg" class="d-block img-thumbnail card-img" alt="">
+                                        </figure>
+                                        <h6 class="ps-2">Lina Wesley</h6>
+                                    </header>
+
+                                    <div class="card-custom-content py-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ser incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p class="rating py-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Second Slide Set-->
+                        <div class="carousel-item ">
+                            <div class="card-slide-container d-flex justify-content-between align-items-center">
+                                <div class="card-slide bg-light p-4 shadow">
+                                    <header class="card-custom-header d-flex w-100 align-items-center py-2">
+                                        <figure class="card-img-container shadow">
+                                            <img src="images/michael-dam-mEZ3PoFGs_k-unsplash (1).jpg" class="d-block img-thumbnail card-img" alt="">
+                                        </figure>
+                                        <h6 class="ps-2">Lina Wesley</h6>
+                                    </header>
+
+                                    <div class="card-custom-content py-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ser incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p class="rating py-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-slide bg-light p-4 shadow">
+                                    <header class="card-custom-header d-flex w-100 align-items-center py-2">
+                                        <figure class="card-img-container shadow">
+                                            <img src="images/vince-fleming-j3lf-Jn6deo-unsplash.jpg" class="d-block img-thumbnail card-img" alt="">
+                                        </figure>
+                                        <h6 class="ps-2">Brian Lim</h6>
+                                    </header>
+
+                                    <div class="card-custom-content py-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ser incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p class="rating py-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-slide bg-light p-4 shadow">
+                                    <header class="card-custom-header d-flex w-100 align-items-center py-2">
+                                        <figure class="card-img-container shadow">
+                                            <img src="images/ben-parker-OhKElOkQ3RE-unsplash.jpg" class="d-block img-thumbnail card-img" alt="">
+                                        </figure>
+                                        <h6 class="ps-2">Ben Parker</h6>
+                                    </header>
+
+                                    <div class="card-custom-content py-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ser incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p class="rating py-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Third Slide Set-->
+                        <div class="carousel-item ">
+                            <div class="card-slide-container d-flex justify-content-between align-items-center">
+                                <div class="card-slide bg-light p-4 shadow">
+                                    <header class="card-custom-header d-flex w-100 align-items-center py-2">
+                                        <figure class="card-img-container shadow">
+                                            <img src="images/vince-fleming-j3lf-Jn6deo-unsplash.jpg" class="d-block img-thumbnail card-img" alt="">
+                                        </figure>
+                                        <h6 class="ps-2">Brian Lim</h6>
+                                    </header>
+
+                                    <div class="card-custom-content py-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ser incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p class="rating py-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-slide bg-light p-4 shadow">
+                                    <header class="card-custom-header d-flex w-100 align-items-center py-2">
+                                        <figure class="card-img-container shadow">
+                                            <img src="images/ben-parker-OhKElOkQ3RE-unsplash.jpg" class="d-block img-thumbnail card-img" alt="">
+                                        </figure>
+                                        <h6 class="ps-2">Ben Parker</h6>
+                                    </header>
+
+                                    <div class="card-custom-content py-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ser incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p class="rating py-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card-slide bg-light p-4 shadow">
+                                    <header class="card-custom-header d-flex w-100 align-items-center py-2">
+                                        <figure class="card-img-container shadow">
+                                            <img src="images/michael-dam-mEZ3PoFGs_k-unsplash (1).jpg" class="d-block img-thumbnail card-img" alt="">
+                                        </figure>
+                                        <h6 class="ps-2">Lina Wesley</h6>
+                                    </header>
+
+                                    <div class="card-custom-content py-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ser incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p class="rating py-2">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Controls -->
+                    <button class="carousel-control-prev justify-content-start pe-5" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next justify-content-end ps-5" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div> 
+            </section>
+
+           
+            <!-- Section 7 - Company stats and Partners -->
+            <section id="section-7" class="container py-5 my-5">
+                <header class="container">
+                    <h2 class="">Nationwide service</h2>
+                </header>
+                <div class="row">
+                    <div class="col-lg d-flex justify-content-center align-items-start flex-column px-5"> 
+                        <div class="stats-container first-row">
+                            <div class="d-flex gap-5">
+                                <p class="d-flex align-items-center gap-2 lead fw-bold"><span class="h1 stats-number">531+</span>Properties sold</p>
+                                <p class="d-flex align-items-center gap-2 lead fw-bold"><span class="h1 stats-number">65</span>Locations nationwide</p>
+                            </div>
+                        </div>
+
+                        <div class="stats-container second-row">
+                            <div class="d-flex gap-5">
+                                <p class="d-flex align-items-center gap-2 lead fw-bold"><span class="h1 stats-number">24h</span> Team support</p>
+                                <p class="d-flex align-items-center gap-2 lead fw-bold"><span class="h1 stats-number">100%</span> Satisfied clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg d-flex justify-content-center align-items-center">     
+                        <img src="images/Untitled design (5).png" class="d-block w-75" alt="">
+                    </div>
+                </div>
+
+                <div id="partner-section" class="container-fluid">
+                    <header class="container">
+                        <h3 class="">Our Partners</h3>
+                    </header>
+                    <div class="partners-logo-container container d-flex justify-content-between align-items-center gap-5 py-5">
+                        <img src="images/partner-logo1.png" class="d-block" width="150px" height="auto" alt="">
+                        <img src="images/partner-logo2.png" class="d-block" width="130px" height="auto" alt="">
+                        <img src="images/partner-logo4.png" class="d-block" width="130px" height="auto"  alt="">
+                        <img src="images/partner-logo5.png" class="d-block" width="170px" height="auto"  alt="">
+                        <img src="images/partner-logo6.png" class="d-block" width="160px" height="auto"  alt="">
+                    </div>
+                </div>
+            </section>
+
+            <div id="subscribe-block" class="container p-3 shadow my-5">
+                <div class="subscribe-form d-flex justify-content-center align-items-center">
+                        <h3 class="text-light">Are you a home owner?</h3>
+                        <form action="get" class="p-4">
+                            <div class="d-flex gap-1">
+                                <label for="area-search-input" class="form-label"></label>
+                                <input type="text" id="area-search-input" class="form-control" placeholder="Enter Email">
+                                <button type="button" class="btn btn-dark section-btn">Get listed!</button>
+                            </div>
+                        </form>
+                </div>
+            </div>
+
+            <!--Section 8 - Contact block-->
+            <footer id="main-footer" class="container-fluid p-5 mt-5 ">
+                <div class="row container pt-5 mx-0">
+                    <div class="section-right col-lg-5 ps-3">
+                        <header class="">
+                            <a href="" class="d-flex justify-content-start align-items-center text-dark fw-bold fs-3 d-flex align-items-center">
+                            <img src="images/company-logo.png" alt="" width="30px"> Wonder<span class="">Homes</span></a>
+                        </header>
+                        <ul class="contact-list py-3 fs-6">
+                            <li>
+                                <p><span class="text-dark fs-5"><i class="fa-solid fa-phone"></i></span> (222) 555-3333</p>
+                            </li>
+                            <li>
+                                <p><span class="text-dark fs-5"><i class="fa-solid fa-envelope"></i></span> wonderhomes@emailex.com</p>
+                            </li>
+                            <li>
+                                <p><span class="text-dark fs-5"><i class="fa-solid fa-location-dot"></i></span> 123 Anywhere St. Any City, ST 12345</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="section-left col-lg-7 d-flex justify-content-between">
+                        <div class="">
+                            <h5>About us</h5>
+                            <ul class="footer-links-container">
+                                <li class="nav-item"><a href="" class="nav-link text-dark fs-6">Contact</a></li>
+                                <li class="nav-item"><a href="" class="nav-link text-dark fs-6">Properties</a></li>
+                                <li class="nav-item"><a href="" class="nav-link text-dark fs-6">Services</a></li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <h5>Product</h5>
+                            <ul class="footer-links-container">
+                                <li class="nav-item"><a href="" class="nav-link text-dark fs-6">Home Design</a></li>
+                                <li class="nav-item"><a href="" class="nav-link text-dark fs-6">Interior Design</a></li>
+                                <li class="nav-item"><a href="" class="nav-link text-dark fs-6">Appartments</a></li>
+                            </ul>
+                        </div>
+                        <div class="">
+                            <h5>Support</h5>
+                            <ul class="footer-links-container">
+                                <li class="nav-item"><a href="" class="nav-link text-dark fs-6">Help Center</a></li>
+                                <li class="nav-item"><a href="" class="nav-link text-dark fs-6">Management</a></li>
+                                <li class="nav-item"><a href="" class="nav-link text-dark fs-6">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="d-flex align-items-start flex-column gap-2">
+                            <h5>Download our App</h5>
+                            <img src="images/google-play-badge.png" width="140px" height="auto" alt="">
+                            <img src="images/apple-store-img.png" width="140px" height="auto" alt="">
+                            <p class="social-media-icons-container d-flex justify-content-evenly gap-3 py-3 text-dark fs-5">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </p>
+                        </div>
+                    </div>
+               </div>
+            </footer>
+
+            <section id="credit" class="container-fluid py-3 px-5">
+                <div class="credit-container container d-flex justify-content-between pe-5">
+                    <p class="fs-6">Designed and developed by Jarol Riera.</p>
+                    <p class="fs-6"><a href="" class="text-dark">Terms & Conditions</a></p>
+                </div>
+            </section>
+        </main>
+
+        
+
+
+
+        <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
