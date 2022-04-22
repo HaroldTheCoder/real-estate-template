@@ -115,6 +115,10 @@ ul {
     background-color: #5f60b8c4;
 }
 
+.mobile-button-container {
+    display: none;
+}
+
 /*Section-1 General */
 .section-btn {
     width: 200px;
@@ -305,13 +309,16 @@ img {
     #main-footer .section-left div:nth-child(3),
     .card-slide-container div:nth-child(1),
     .card-slide-container div:nth-child(3),
-    .section-background, .navbar-brand p 
+    .section-background, .navbar-brand p,
+    .desktop-button
     { display: none !important; }
+
+    .mobile-button-container { display: block; }
 
 
     /* General Width Mobile Adjust */
     .hero-title h1, .hero-title .lead, 
-    .section-paragraph { width: 100% !important;}
+    .section-paragraph, .mobile-search-button { width: 100% !important;}
     .form-section, #subscribe-block { width: 90%;}
     .partners-logo-container img { width: 70px !important; }
 
