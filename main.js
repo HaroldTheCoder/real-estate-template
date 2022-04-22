@@ -1,4 +1,5 @@
 const navbar = document.querySelector('#main-navbar');
+const navbarToggler = document.querySelector('.navbar-toggler');
 
 // Scroll functions 
 window.addEventListener('scroll', ()=> {
@@ -10,3 +11,8 @@ window.addEventListener('scroll', ()=> {
         navbar.classList.remove('shadow');
     }
 });
+
+// Navbar Toggler custom function
+navbarToggler.addEventListener('click', ()=> {
+    navbar.classList.toggle('open');
+})
