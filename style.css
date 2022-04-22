@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+.fa-bars {
+    color: #111212 !important;
+}
+
 ul {
     list-style-type: none;
     padding-left: 1em !important;
@@ -294,6 +298,7 @@ img {
      
     #main-navbar.active-scroll {
     padding: 0.3em 0.7em !important;
+    background-color: #ffffffe9;
 }
     
     #hero {
