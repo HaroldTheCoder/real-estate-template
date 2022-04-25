@@ -26,7 +26,7 @@ window.addEventListener('scroll', ()=> {
                 const time = value / speed;
                 if(data < value) {
                     counter.innerText = Math.ceil(data + time);
-                    setTimeout(animate, 1);
+                    setTimeout(animate, 10);
                 } else{
                     counter.innerText = value;
                 }
