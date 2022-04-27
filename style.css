@@ -350,8 +350,7 @@ img {
        padding-left: 1em!important;
        padding-right: 1em !important;
     }
-    #main-footer .section-right,
-    .credit-container { padding: 0 !important;}
+    #main-footer .section-right { padding: 0 !important;}
 
 
     /* General Margin Mobile Adjust */
